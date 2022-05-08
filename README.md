@@ -1,2 +1,20 @@
-# spring-boot-swagger-demo
-spring boot &amp; swagger api demo
+# why this repo?
+我花费了很多功夫才成功的运行起了spring boot & swagger api
+
+尽管网上教程一大堆，但是都有点过时了。
+
+回想起来踩了以下几个坑：
+
+1, 官方文档确实不太好，没有一个step by step的例子，对于一个只想启动并且运行起来的人来说，太过麻烦。
+包是通用的，但是使用者可能只需要使用其中的一个特性。
+导致会比较混乱。
+
+2，网上的例子大多数是2.x的，然后2.x的还依赖google的包，google的包，国内又装不上。
+
+3，没有仔细阅读官方文档，不知道他们的ui地址改变了，其实已经运行成功了，但是自己还以为没成功。
+
+4，springfox 两年没有更新了。
+
+5，@ApiImplicitParam(name = "id", value = "用户的id", paramType = "path")
+没有填写name导致报错了，这个问题网上没有类似的问题，也搜索不到为什么。
+
